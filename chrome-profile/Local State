@@ -1,0 +1,9 @@
+{
+  "browser": {
+    "enabled_labs_experiments": [
+      "enable-experimental-web-platform-features",
+      "optimization-guide-on-device-model@2",
+      "prompt-api-for-gemini-nano@1"
+    ]
+  }
+}

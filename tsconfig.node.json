@@ -1,9 +1,19 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
     "composite": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "allowSyntheticDefaultImports": true
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "eslint.config.js",
+    "postcss.config.js",
+    "prettier.config.js",
+    "tailwind.config.js",
+    "vite.config.ts"
+  ]
 }

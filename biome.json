@@ -3,7 +3,12 @@
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["dist/**", "chrome-profile/**", "eslint.config.js"]
+    "ignore": [
+      "dist/**",
+      "chrome-profile/**",
+      "node_modules/**",
+      "eslint.config.js"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -40,6 +45,22 @@
       "quoteStyle": "double",
       "attributePosition": "auto",
       "bracketSpacing": true
+    },
+    "globals": ["chrome", "React", "UtilityTypes"]
+  },
+  "overrides": [
+    {
+      "include": ["*.config.ts", "*.config.js"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off"
+          },
+          "style": {
+            "useNamingConvention": "off"
+          }
+        }
+      }
     }
-  }
+  ]
 }

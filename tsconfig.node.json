@@ -5,9 +5,9 @@
     "composite": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "noEmit": true,
     "resolveJsonModule": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["chrome-types"]
   },
   "include": [
     "eslint.config.js",

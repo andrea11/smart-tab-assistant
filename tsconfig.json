@@ -3,6 +3,7 @@
     "allowJs": false,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -11,12 +12,20 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
+    "types": [
+      "chrome-types",
+      "./src/declarations.d.ts",
+      "./src/shared/types/types.d.ts"
+    ],
     "useDefineForClassFields": true
   },
-  "include": ["src"],
+  "include": ["src", "lib", "components"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

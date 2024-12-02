@@ -1,4 +1,6 @@
 {
+  "name": "Smart Tab Assistant",
+  "short_name": "Smart Tabb",
   "{{chrome}}.manifest_version": 3,
   "icons": {
     "16": "icon/16.png",
@@ -7,22 +9,20 @@
     "96": "icon/96.png",
     "128": "icon/128.png"
   },
-  "{{chrome}}.action": {
-    "default_popup": "src/popup/popup.html"
-  },
+  "{{chrome}}.action": {},
   "{{chrome}}.permissions": [
     "aiLanguageModelOriginTrial",
     "sidePanel",
     "storage",
-    "tabs"
+    "tabs",
+    "tabGroups"
   ],
   "{{chrome}}.trial_tokens": [
     "AstYANHNhgCaluIHfTpMhpsOgs20TaBsSiLgEXMzzmx7C0mo19CWwL+uwAHlCCrbVjO2YBDD9QDVVKLK5HvDoAIAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vZ2diaWJtam5uamtpaWltbGxpY2RqZWNpcHBqZ2ZlYmEiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
   ],
   "{{chrome}}.minimum_chrome_version": "131",
   "{{chrome}}.options_ui": {
-    "page": "src/options/options.html",
-    "open_in_tab": true
+    "page": "src/options/options.html"
   },
   "background": {
     "{{chrome}}.service_worker": "src/background/background.ts"
